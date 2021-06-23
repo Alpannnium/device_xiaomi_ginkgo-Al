@@ -38,7 +38,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
-
-# Build
-BUILD_USERNAME=neophyte
-BUILD_HOSTNAME=neophyte_server
