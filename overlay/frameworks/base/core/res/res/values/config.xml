@@ -848,4 +848,7 @@
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
 
+    <!-- Whether to Enable Smart Charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+
 </resources>
