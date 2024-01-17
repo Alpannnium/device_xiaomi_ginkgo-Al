@@ -28,7 +28,7 @@ import android.content.SharedPreferences;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.os.Bundle;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -38,7 +38,7 @@ import com.android.settingslib.widget.MainSwitchPreference;
 
 import org.lineageos.settings.R;
 
-public class DozeSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
+public class DozeSettingsFragment extends PreferenceFragmentCompat implements OnPreferenceChangeListener,
         CompoundButton.OnCheckedChangeListener {
 
     private MainSwitchPreference mSwitchBar;
@@ -50,7 +50,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.doze_settings);
+        setPreferencesFromResource(R.xml.doze_settings, rootKey);
 
         SharedPreferences prefs = getActivity().getSharedPreferences("doze_settings",
                 Activity.MODE_PRIVATE);

@@ -23,7 +23,7 @@ import android.os.VibrationEffect;
 import android.os.Vibrator;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SeekBarPreference;
 import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.ListPreference;
@@ -36,7 +36,7 @@ import org.lineageos.settings.doze.DozeSettingsActivity;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.utils.VibrationUtils;
 
-public class DeviceSettingsFragment extends PreferenceFragment implements
+public class DeviceSettingsFragment extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener {
 
     private static final String PREF_DIRAC = "dirac_pref";

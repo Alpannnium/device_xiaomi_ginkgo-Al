@@ -26,7 +26,7 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SeekBarPreference;
 
@@ -36,7 +36,7 @@ import org.lineageos.settings.R;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.display.KcalUtils;
 
-public class KcalSettingsFragment extends PreferenceFragment implements
+public class KcalSettingsFragment extends PreferenceFragmentCompat implements
         OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "KcalSettings";
@@ -53,7 +53,7 @@ public class KcalSettingsFragment extends PreferenceFragment implements
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.kcal_settings);
+        setPreferencesFromResource(R.xml.kcal_settings, rootKey);
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
         mKcalSwitchPreference = (MainSwitchPreference) findPreference("kcal_enable");

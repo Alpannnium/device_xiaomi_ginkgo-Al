@@ -34,7 +34,7 @@ public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
         DeviceSettingsFragment deviceSettingsFragment;
         if (fragment == null) {
             deviceSettingsFragment = new DeviceSettingsFragment();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, deviceSettingsFragment)
                     .commit();
         }
