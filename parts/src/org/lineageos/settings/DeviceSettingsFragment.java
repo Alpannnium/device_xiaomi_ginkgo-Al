@@ -25,7 +25,7 @@ import android.os.Vibrator;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SeekBarPreference;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.ListPreference;
 
 import org.lineageos.settings.R;
@@ -48,7 +48,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private static final String PREF_DOZE_SETTINGS = "doze_settings";
     private static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
 
-    private SwitchPreference mDiracPref;
+    private SwitchPreferenceCompat mDiracPref;
 
     private ListPreference mHeadsetPref;
     private ListPreference mPresetPref;
@@ -72,7 +72,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
 
         boolean enhancerEnabled = mDiracUtils.isDiracEnabled();
 
-        mDiracPref = (SwitchPreference) findPreference(PREF_DIRAC);
+        mDiracPref = (SwitchPreferenceCompat) findPreference(PREF_DIRAC);
         mDiracPref.setOnPreferenceChangeListener(this);
         mDiracPref.setChecked(enhancerEnabled);
 
