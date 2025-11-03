@@ -26,6 +26,8 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 # Inherit some common ArrowOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
+DEVICE_MAINTAINER := neophyte
+DEVICE_MAINTAINER_LINK := https://t.me/k4ngcaribug
 $(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier
@@ -35,4 +37,10 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-DEVICE_MAINTAINER := Adithya (ghostrider_reborn)
+
+# Signing
+-include vendor/lineage-priv/keys/keys.mk
+
+# Build
+BUILD_USERNAME=neophyte
+BUILD_HOSTNAME=neophyte_server
