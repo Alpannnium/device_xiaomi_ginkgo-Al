@@ -208,6 +208,10 @@ vendor.display.use_smooth_motion=1
 # DRM
 drm.service.enabled=true
 
+# HWUI
+persist.log.tag.HWUI=S
+persist.log.tag.hwcomposer=S
+
 # FS-verity
 ro.apk_verity.mode=2
 
