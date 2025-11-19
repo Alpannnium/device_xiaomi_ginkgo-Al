@@ -32,4 +32,4 @@ on boot
 
     # Vibration
     chown system system /sys/class/leds/vibrator/vtg_level
-    chmod 0660 /sys/class/leds/vibrator/vtg_level	
+    chmod 0660 /sys/class/leds/vibrator/vtg_level
