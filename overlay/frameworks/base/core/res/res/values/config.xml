@@ -865,4 +865,7 @@
     <item>psi_partial_stall_ms=400</item>
     </string-array>
 
+    <!-- Whether WM DisplayContent supports high performance transitions
+         (lower-end devices may want to disable) -->
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
 </resources>
