@@ -853,4 +853,16 @@
 
     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
     <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.7</item>
+
+    <!-- Set Default LMKD profile -->
+    <string-array name="config_lmkdDeviceConfigProperties">
+    <item>thrashing_limit_low=10</item>
+    <item>thrashing_limit_medium=20</item>
+    <item>thrashing_limit_high=30</item>
+    <item>thrashing_limit_critical=48</item>
+    <item>upgrade_pressure=98</item>
+    <item>kill_timeout_ms=500</item>
+    <item>psi_partial_stall_ms=400</item>
+    </string-array>
+
 </resources>
