@@ -27,7 +27,6 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalUtils;
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.VibrationUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -50,8 +49,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             VibrationUtils.setCurrentVibStrength(sharedPrefs);
         }
 
-        if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
-            DozeUtils.startService(context);
-        }
     }
 }
