@@ -6,14 +6,11 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 	AudioFX \
-	Aperture \
 	AICorePrebuilt \
 	AiWallpapers \
 	AndroidAutoStubPrebuilt \
-	Camera2 \
 	DevicePersonalizationPrebuiltPixel2020 \
         DuckDuckGo \
-        Flash \
 	GoogleTTS \
 	Gallery2 \
 	Jellyfish \
