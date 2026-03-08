@@ -37,6 +37,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+DEVICE_MAINTAINER := Kyzennn
+DEVICE_MAINTAINER_LINK := https://t.me/AlpannnWorldd
 
 # Keys
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
