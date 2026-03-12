@@ -1,6 +1,6 @@
 # Override host metadata to make builds more reproducible and avoid leaking info
-export BUILD_USERNAME=neophyte
-export BUILD_HOSTNAME=neophyte-build
+export BUILD_USERNAME=epann
+export BUILD_HOSTNAME=epann-build
 
 # Auto-apply framework patch for SurfaceFlinger (disable HW overlays by default)
 
